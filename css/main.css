@@ -1,0 +1,37 @@
+/* General Styles*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1366px || 100%;
+  /*background-color: #0079bf;*/
+}
+
+/* Styles for header */
+
+header {
+  outline: 1px solid silver;
+  /*background-color: #0067a3;*/
+  padding: 0.08% 0 0.08%;
+}
+
+header div, header p, header h1 {
+  display: inline-block;
+  outline: 1px solid gold;
+}
+
+.dashboard {
+  outline: 1px solid purple;
+  margin: 0 0.2% 0 0.5%;
+
+  width: 100px;
+  height: 30px;
+}
+
+header i {
+  /*color: #fff;*/
+}
