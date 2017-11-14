@@ -1,3 +1,9 @@
+/* Colors:
+-header: #0067a3;
+-header's divs: #4d95bf;
+*/
+
+
 /* General Styles*/
 
 * {
@@ -16,7 +22,9 @@ body {
 header {
   outline: 1px solid silver;
   /*background-color: #0067a3;*/
-  padding: 0.08% 0 0.08%;
+  padding: 0 0 0.05%;
+  width: 100%;
+  overflow: auto;
 }
 
 header div, header p, header h1 {
@@ -24,14 +32,83 @@ header div, header p, header h1 {
   outline: 1px solid gold;
 }
 
-.dashboard {
-  outline: 1px solid purple;
-  margin: 0 0.2% 0 0.5%;
+/* Styles for first container*/
 
-  width: 100px;
-  height: 30px;
+#container-1 {
+  width: 18%;
+  margin-left: 0.45%;
+  position: relative;
+  bottom: 5px;
+  outline: 1px solid blue;
 }
 
-header i {
-  /*color: #fff;*/
+/* Styles for dashboard*/
+
+.dashboard {
+  outline: 1px solid purple;
+  background-color: #4d95bf;
+  margin: 0 0.2% 0 0.45%;
+  width: 97px;
+  height: 30px;
+  text-align: center;
+  padding: 0.4%;
+  /*position: relative;
+  bottom: 3px;*/
+}
+
+.dashboard p {
+  margin-left: 9px;
+}
+
+.dashboard i, .dashboard p {
+  position: relative;
+  top: 4px;
+}
+
+/* Styles for search box*/
+
+.search-box {
+  outline: 1px solid orange;
+  padding: 0.5%;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.search-box input {
+
+}
+
+/* Styles for header's title*/
+
+#container-2 {
+  display: inline-block;
+  margin-left: 29.4%;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+/* Styles for icons*/
+
+#container-3 {
+  float: right;
+  margin-right: 12px;
+  margin-top: 5px;
+  height: 35px;
+}
+
+#container-3 span {
+  outline: 1px solid purple;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  /*font-size: 1.23em;/*Cambiar este font size*/
+  margin-left: 5px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+#name {
+  font-size: 15px;
 }
