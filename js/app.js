@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
     div.addEventListener('click', function(){
         var addAlert = div.textContent;
         div.classList.add('none');
-        var duplDiv = document. createElement('div');
+        var duplDiv = document.createElement('div');
         sectionDivs.appendChild(duplDiv);
         duplDiv.classList.add('second-div');
         var form = document.createElement('form');
@@ -25,5 +25,24 @@ window.addEventListener('load', function() {
         span.appendChild(ex);
         duplDiv.appendChild(span);
         span.classList.add('span-style');
+
+        // Versión 0.0.2 
+
+        button.addEventListener('click',function(){
+            sectionDivs.removeChild(duplDiv);
+            var newDiv = document.createElement('div');
+            sectionDivs.appendChild(newDiv);
+            newDiv.classList.add('new-div');
+            var title = document.createElement('span');
+            var titleContent = document.createTextNode('Nombre de la lista');
+            title.appendChild(titleContent);
+            newDiv.appendChild(title);
+            title.classList.add('title');
+            var littleSpan = document.createElement('span');
+            var spanContent = document.createTextNode('Añadir una lista ...');
+            littleSpan.appendChild(spanContent);
+            littleSpan.classList.add('little-span');
+            newDiv.appendChild(littleSpan);
+        });
     });
 });

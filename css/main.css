@@ -283,7 +283,7 @@ main {
 /* Styles for the first section */
 
 #first-section {
-  padding: 0 0.8%;
+  padding: 0.3% 0.8%;
 }
 
 #first-section div {
@@ -318,10 +318,6 @@ main {
   font-size: 0.8em;
 }
 
-.inputstyle::placeholder {
-  color: #bcd3c7;
-}
-
 .button-style {
   display: inline-block;
   background-color: #43cd1b;
@@ -340,4 +336,32 @@ main {
   font-size: 1.3em;
   position: relative;
   top: 5px;
+}
+/*Versión 0.0.2*/
+
+.new-div {
+  background-color: #fff;
+  padding: 0;
+  height: 90px;
+}
+.title, .little-span {
+  display: block;
+  height: 30px;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.title {
+  color: #000;
+  font-weight: 700;
+}
+
+.little-span {
+  color: #b7babb;
+}
+
+.little-span:hover {
+  text-decoration: underline;
+  background-color: #b7babb;
+  color: #000;
 }
