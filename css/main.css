@@ -1,6 +1,7 @@
 /* Colors:
 -header: #0067a3;
 -header's divs: #4d95bf;
+-1AAAEE
 */
 
 
@@ -13,42 +14,41 @@
 }
 
 body {
-  width: 1366px || 100%;
-  /*background-color: #0079bf;*/
+  width: 100%;
+  background-color: #0079bf;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 /* Styles for header */
 
 header {
-  outline: 1px solid silver;
-  /*background-color: #0067a3;*/
-  padding: 0 0 0.05%;
+  background-color: #0067a3;
+  padding: 0.2% 0 0.2%;
   width: 100%;
   overflow: auto;
 }
 
 header div, header p, header h1 {
   display: inline-block;
-  outline: 1px solid gold;
 }
 
 /* Styles for first container*/
 
 #container-1 {
-  width: 18%;
-  margin-left: 0.45%;
+  width: 25%;
+  margin-left: 0.5%;
   position: relative;
   bottom: 5px;
-  outline: 1px solid blue;
 }
+
 
 /* Styles for dashboard*/
 
 .dashboard {
-  outline: 1px solid purple;
   background-color: #4d95bf;
-  margin: 0 0.2% 0 0.45%;
-  width: 97px;
+  margin: 0 3% 0 0.45%;
+  width: 30%;
   height: 30px;
   text-align: center;
   padding: 0.4%;
@@ -57,25 +57,53 @@ header div, header p, header h1 {
 }
 
 .dashboard p {
-  margin-left: 9px;
+  font-size: 0.9em;
+  margin-left: 5%;
 }
 
-.dashboard i, .dashboard p {
+.dashboard .fa-trello, .dashboard p {
   position: relative;
   top: 4px;
+}
+
+.dashboard .fa-trello {
+  margin-left: 3%;
 }
 
 /* Styles for search box*/
 
 .search-box {
-  outline: 1px solid orange;
+  background-color: #4d95bf;
   padding: 0.5%;
   height: 30px;
-  margin-left: 5px;
+  width: 65.2%;
+  position: relative;
+  top: 1px;
+}
+
+.search-box form {
+  width: 100%;
 }
 
 .search-box input {
+  background-color: #4d95bf;
+  display: inline-block;
+  width: 90%;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-size: 1em;
+  position: relative;
+  top: 3.8px;
+}
 
+.fa-search {
+  font-size: 1em;
+  width: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  position: relative;
+  top: 3px;
 }
 
 /* Styles for header's title*/
@@ -83,32 +111,84 @@ header div, header p, header h1 {
 #container-2 {
   display: inline-block;
   margin-left: 29.4%;
+  width: 8%;
+  position: relative;
+  top: 5px;
 }
 
 h1 {
+  font-family: 'Timmana', sans-serif;
   font-size: 1.7em;
+  font-style: italic;
+  margin-left: 2%;
+  position: relative;
+  right: 90px;
 }
+
+#container-2 .fa-trello {
+  font-size: 1.45em;
+  position: relative;
+  bottom: 2px;
+  right: 90px;
+}
+ 
 
 /* Styles for icons*/
 
 #container-3 {
   float: right;
-  margin-right: 12px;
-  margin-top: 5px;
-  height: 35px;
+  margin-right: 13px;
+  margin-top: 6px;
+  width: 12%;
+  height: 30px;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  display: inline-block;
+  width: 22%;
+  padding: 3.5% 3.2% 3.2%;
+  margin-left: 0.8%;
+  text-align: center;
+  height: 100%;
+  background-color: #4d95bf;
+}
+
+.icon-container {
+  position: relative;
+  bottom: 11px;
+}
+
+.icon {
+  font-size: 1em;
+  position: relative;
+  top: 1px;
+}
+/*
 #container-3 span {
   outline: 1px solid purple;
   display: inline-block;
   width: 33px;
   height: 33px;
   /*font-size: 1.23em;/*Cambiar este font size*/
-  margin-left: 5px;
-  padding-top: 5px;
+  /*padding-top: 5px;
   text-align: center;
+}*/
+
+#picture-container {
+  position: relative;
+  bottom: 1px;
+  padding: 0;
 }
 
-#name {
-  font-size: 15px;
+#user-picture {
+  height: 100%;
+  width: 100%;
 }
